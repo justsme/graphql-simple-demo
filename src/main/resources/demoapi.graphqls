@@ -1,0 +1,17 @@
+type Query {
+    school(id: ID): School
+    student(id: ID): Student
+}
+
+type School {
+    id: Int
+    name: String
+    ranking: Int
+}
+
+type Student {
+    id: Int
+    name: String
+    age: Int
+    classId: Int
+}
